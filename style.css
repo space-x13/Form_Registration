@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+/* making it on a separate lines */
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+h1,
+p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  min-width: 300px;
+  width: 60vw;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+/* removing the fieldset borders */
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  /* giving the fieldset a bit of separation */
+  border-bottom: 3px solid #3b3b4f;
+}
+
+/* removing the last fieldset border-bottom with last-of-type css pseudoselector */
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+/* making the input, textarea and select take the full width */
+
+input,
+textarea,
+select {
+  width: 100%;
+  margin: 10px 0 0 0;
+  /* increasing the height where the user will type */
+  min-height: 2em;
+}
+
+/* resetting the width of the account input   */
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+/* changing the theme of the input and textarea color */
+input,
+textarea {
+  background: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #fff;
+}
+
+/* button input */
+input[type="submit"]{
+    display: block;
+    width: 60%;
+    min-width: 60px;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background: #3b3b4f;
+    border-color:white;
+} 
+
+a{
+  color: #dfdfe2;
+}
